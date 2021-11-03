@@ -1,36 +1,37 @@
-// import React from 'react';
+import React from 'react';
+import './WorkList-style.css'
 
-// import 
-//     red-rose.jpg
-    // blue-rose.jpg,
-    // yellow-rose.jpg,
-    // violet-rose.jpg,
-    // black-rose.jpg,
-    // deeppink-rose.jpg,
-    // red-tulip.jpg,
-    // blue-tulip.jpg,
-    // yellow-tulip.jpg,
-    // carnaition.jpg,
-    // bottan.jpg
-//  from './img'
+import red_rose from './img/red-rose.jpg';
+import blue_rose from './img/blue-rose.jpg'
+import yellow_rose from './img/yellow-rose.jpg'
+import violet_rose from './img/violet-rose.jpg'
+import black_rose from './img/black-rose.jpg'
+import deeppink_rose from './img/deeppink-rose.jpg'
 
-const imglist = [
-    {img: 'red-rose.jpg', alt: 'Rose(red)'},
-    {img: 'blue-rose.jpg', alt: 'Rose(blue)'},
-    {img: 'yellow-rose.jpg', alt: 'Rose(yellow)'},
-    {img: 'violet-rose.jpg', alt: 'Rose(violet)'},
-    {img: 'black-rose.jpg', alt: 'Rose(black)'},
-    {img: 'deeppink-rose.jpg', alt: 'Rose(deep pink)'},
-    {img: 'red-tulip.jpg', alt: 'Tulip(red)'},
-    {img: 'blue-tulip.jpg', alt: 'Tulip(blue)'},
-    {img: 'yellow-tulip.jpg', alt: 'Tulip(yellow)'},
-    {img: 'carnaition.jpg', alt: 'Carnation'},
-    {img: 'bottan.jpg', alt: 'Camellia'},
-];
-
-
-export const WorkList = imglist.map((work) => {
+export const WorkList = () => {
     return (
-        <img src={work.img} />
+        <>
+        <h1>Flower Page</h1>
+        <div className="ListBase">
+            <div className="WorkImg">
+                <img src={red_rose} alt="red-rose" />
+            </div>
+            <div className="WorkImg">
+                <img src={blue_rose} alt="blue-rose" />
+            </div>
+            <div className="WorkImg">
+                <img src={yellow_rose} alt="yellow-rose" />
+            </div>
+            <div className="WorkImg">
+                <img src={violet_rose} alt="violet-rose" />
+            </div>
+            <div className="WorkImg">
+                <img src={black_rose} alt="black-rose" />
+            </div>
+            <div className="WorkImg">
+                <img src={deeppink_rose} alt="deeppink-rose" />
+            </div>
+        </div>
+        </>
     )
-})
+}
