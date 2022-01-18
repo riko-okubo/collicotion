@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
-import { EarringImg } from "./EarringImg";
+import { EarringImg_Masonry } from './EarringImg_Masonry';
+import { EarringImg_Quilted } from './EarringImg_Quilted';
 
 export const Home = () => {
     return(
         <>
-        <Link to="/EarringImg">WorkList</Link>
+        <div><Link to="/EarringImg_Masonry">EarringImg_Masonry</Link></div>
+        <div><Link to="/EarringImg_Quilted">EarringImg_Quilted</Link></div>
         </>
     )
 }

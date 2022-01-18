@@ -3,13 +3,13 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { itemData } from './ItemData';
+import { itemData_Masonry } from './ItemData_Masonry';
 
-export const  EarringImg = () => {
+export const  EarringImg_Masonry = () => {
     return (
         <Box sx={{ width: '80%', height: 1, overflowY: 'scroll',  margin: 'auto'}}>
             <ImageList variant="masonry" cols={3} gap={8}>
-                {itemData.map((item) => (
+                {itemData_Masonry.map((item) => (
                     <ImageListItem key={item.img}>
                         <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
