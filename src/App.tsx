@@ -1,28 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import './App.css';
-
-import { WorkList } from './component/WorkList'
+import { Home } from "./component/Home"
+import { EarringImg } from "./component/EarringImg";
+import { Routes } from "react-router";
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      {WorkList}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/EarringImg" element={<EarringImg />} />
+        <Route path="/" element={<Home />} />
+        {/* <Route exact path="/" component={Home} /> */}
+        {/* <Redirect to="/" /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
