@@ -15,10 +15,12 @@ import stud_OrangeGreenYellow from './Image/stud_OrangeGreenYellow.jpg';
 import stud_RedWhite from './Image/stud_RedWhite.jpg';
 import stud_VioletPinkWhite from './Image/stud_VioletPinkWhite.jpg';
 
-export const itemData = [
+export const itemData_Quilted = [
     {
         img: hook_Blue,
         title: 'hook_blue',
+        rows: 2,
+        cols: 2,
     },
     {
         img: hook_BlueSkyblueWhite,
@@ -31,14 +33,18 @@ export const itemData = [
     {
         img: hook_GreenWhite,
         title: 'hook_green-white',
+        cols: 2,
     },
     {
         img: hook_OrangeYellowWhite,
         title: 'hook_orange-yellow-white',
+        cols: 2,
     },
     {
         img: hook_PinkRed,
         title: 'hook_PinkRed',
+        rows: 2,
+        cols: 2,
     },
     {
         img: hook_Red,
@@ -51,6 +57,8 @@ export const itemData = [
     {
         img: hook_VioletRedPink,
         title: 'hook_VioletRedPink',
+        rows: 2,
+        cols: 2,
     },
     {
         img: stud_Blue,
@@ -63,23 +71,25 @@ export const itemData = [
     {
         img: stud_Green,
         title: 'stud_Green',
+        cols: 2,
     },
     {
         img: stud_Orange,
         title: 'stud_Orange',
+        cols: 2,
     },
     {
-        img: stud_OrangeGreenYellow,
-        title: 'stud_OrangeGreenYellow',
+        img: stud_VioletPinkWhite,
+        title: 'stud_VioletPinkWhite',
+        rows: 2,
+        cols: 2,
     },
     {
         img: stud_RedWhite,
         title: 'stud_RedWhite',
     },
     {
-        img: stud_VioletPinkWhite,
-        title: 'stud_VioletPinkWhite',
+        img: stud_OrangeGreenYellow,
+        title: 'stud_OrangeGreenYellow',
     },
 ]
-
-// }
