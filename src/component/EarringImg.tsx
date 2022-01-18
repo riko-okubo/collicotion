@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 import hook_Blue from './Image/hook_Blue.jpg';
 import hook_BlueSkyblueWhite from './Image/hook_BlueSkyblueWhite.jpg';
@@ -34,6 +35,15 @@ export const  EarringImg = () => {
                             alt={item.title}
                             loading="lazy"
                         />
+                        <ImageListItemBar
+                          sx={{
+                            background:
+                              'linear-gradient(to top, rgba(225,225,225,0.7) 0%, ' +
+                              'rgba(225,225,225,0.4) 70%, rgba(225,225,225,0) 100%)',
+                          }}
+                          title={item.title}
+                          position="bottom"
+                          />
                     </ImageListItem>
                 ))}
             </ImageList>
