@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Header } from './molecules/Header';
+import { Home } from './component/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <App />
+    {/* <Header />
+    <App /> */}
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );
