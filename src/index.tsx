@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import { Header } from './molecules/Header';
+import { Home } from './component/Home';
+import { EarringImg_Quilted } from './component/EarringImg_Quilted';
 
 ReactDOM.render(
   <React.StrictMode>
