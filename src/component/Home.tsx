@@ -22,10 +22,9 @@ const SlideInScrollLeft = (props:Props) => {
     const {children, window} = props;
     const trigger = useScrollTrigger({target: window ? window() : undefined, disableHysteresis: true, threshold: 100});
     return (
-    //   <Slide appear={false} direction="left" in={trigger} timeout={1000}>
-    <Fade in={trigger} timeout={2000}>
-        {children}
-    </Fade>
+        <Slide appear={false} direction="left" in={trigger} timeout={1000}>
+            {children}
+        </Slide>
     );
   }
 
@@ -33,12 +32,9 @@ const SlideInScrollRight = (props:Props) => {
     const {children, window} = props;
     const trigger = useScrollTrigger({target: window ? window() : undefined, disableHysteresis: true, threshold: 100});
     return (
-        // <Slide appear={true} direction="right" in={trigger} timeout={1000}>
-        //     {children}
-        // </Slide>
-        <Fade in={trigger} timeout={2000}>
+        <Slide appear={true} direction="right" in={trigger} timeout={1000}>
             {children}
-        </Fade>
+        </Slide>
     );
 }
 
