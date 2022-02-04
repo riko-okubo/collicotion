@@ -4,14 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Header } from './molecules/Header';
-import { Home } from './component/Home';
+import { Home } from './component/TopPage3';
 import { TopPage } from './component/TopPage';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Header /> */}
     <App />
-    {/* <TopPage /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
