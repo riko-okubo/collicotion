@@ -56,14 +56,15 @@ export const useStyles = makeStyles((theme:Theme) =>
         },
         sub_title: {
             fontFamily: 'cursive',
-            color: '#666A71',
             textAlign: 'center',
             width: '30em',
             "& h3": {
-                fontSize: '3em'
+                fontSize: '3em',
+                color: '#666A71'
             },
             "& p": {
-                fontSize: '1em'
+                fontSize: '1em',
+                color: '#BDBDBD',
             }
         },
 

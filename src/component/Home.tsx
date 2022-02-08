@@ -11,7 +11,7 @@ export const Home = () => {
     return (
         <>
             {/* <div className={classes.header}>
-
+                <Header />
             </div> */}
             
         <div className={classes.top}>
@@ -19,7 +19,7 @@ export const Home = () => {
                 <div className={classes.curtain}>
                     <div className={classes.title}>
                         <h1>coillicotion</h1>
-                        <p>~ My handmade collection ~</p>
+                        <p>~ riko's handmade collection ~</p>
                     </div>
                 </div>
             
