@@ -35,6 +35,18 @@ export const useStyles = makeStyles((theme: Theme) =>
                 fontSize: '0.8em',
                 color: '#BDBDBD'
             }
-        },        
+        },
+        modal: {
+            position: 'absolute' as 'absolute',
+            top: '50%',
+            left: '49%',
+            transform: 'translate(-50%, -50%)',
+            width: '22em',
+            "& img": {
+                width: '20em',
+                border: 'solid 0.5em #FFFFFF',
+                boxShadow: '3px 3px 5px 5px rgba(0, 0, 0, 0.3)'
+            }
+        }
     })
 )
