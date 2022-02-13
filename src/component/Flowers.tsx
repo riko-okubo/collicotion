@@ -8,7 +8,6 @@ import { useStyles } from './FlowersStyle';
 import { FlowerData } from "./Item/FlowerData";
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Backdrop from '@mui/material/Backdrop';
 
 export const Flowers = () => {
     const classes = useStyles();
