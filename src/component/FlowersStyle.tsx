@@ -20,7 +20,7 @@ export const useStyles = makeStyles((theme: Theme) =>
             padding: '5% 0',
         },
         item:{
-            position: 'relative',
+            // position: 'relative',
             textAlign: 'center',
             "& img": {
                 width: '10em',
