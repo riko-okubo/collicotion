@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useStyles } from './FlowersStyle';
 import Box from '@mui/material/Box';
-import { FlowerData } from "./Item/FlowerData";
+import { EarringsData } from "./Item/EarringsData";
 import { WorkList } from "./WorkList";
 
-export const Flowers = () => {
+export const Earrings = () => {
     const classes = useStyles();
 
     useEffect(() => {
@@ -13,8 +13,8 @@ export const Flowers = () => {
 
     return(
         <Box className={classes.box}>
-            <h1>3D Flowers</h1>
-            <WorkList data={FlowerData} />
+            <h1>Earrings</h1>
+            <WorkList data={EarringsData} />
         </Box>
     );
 }

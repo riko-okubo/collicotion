@@ -8,14 +8,15 @@ export const useStyles = makeStyles((theme:Theme) =>
             overflowX: 'hidden'
         },
         top_background: {
-            height: '100vh',
-            opacity: '60%',
-            scaleMode: 'fill',
+            height: '80vh',
+            width: '100%',
+            opacity: '70%',
+            objectFit: 'cover'
         },
         curtain: {
             position: 'absolute',
             width: '35vw',
-            height: '100vh',
+            height: '80vh',
             backgroundColor: '#FFFFFF',
             opacity: '50%',
             top: 0,
@@ -31,8 +32,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             justifyContent: 'center',
             "& h1": {
                 fontSize: '3em',
-                margin: 0
-            },
+                margin: 0,            },
             "& p": {
                 fontSize: '1.8em',
                 margin: 0
@@ -45,13 +45,22 @@ export const useStyles = makeStyles((theme:Theme) =>
             margin: '6em auto'
         },
         content: {
+            width: '100%',
+            margin: '5em 0',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             "& img": {
-                margin: '3em',
+                margin: '0 3em',
                 width: '25em',
-                height: 'auto'
+                height: 'auto',
+                borderRadius: '50%',
+                "&:hover": {
+                    filter: 'opacity(60%)'
+                },
+                "&:active": {
+                    filter: 'opacity(60%)'
+                }
             },
         },
         sub_title: {
