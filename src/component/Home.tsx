@@ -4,6 +4,7 @@ import { useStyles } from './HomeStyle';
 import { Button } from "@material-ui/core";
 import { useNavigate } from 'react-router-dom';
 
+import { Layout } from '../molecules/Layout';
 import backgroundImg from '../component/Image/backgroundImg.jpg';
 import EarringsGroup from '../component/Image/EarringsGroup.jpg';
 import EarringsTop from '../component/Image/EarringsTop.jpg';
@@ -24,7 +25,7 @@ export const Home = () => {
     
 
     return (
-        <>
+        <Layout>
             {/* <div className={classes.header}>
                 <Header />
             </div> */}
@@ -59,15 +60,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-
-            <div className={classes.footer}>
-                <ul>
-                    <li>アクセサリーについて</li>
-                    <li>ホームページ製作記録</li>
-                    <li>プロフィール</li>
-                </ul>
-            </div>
         </div>
-        </>
+        </Layout>
     )
 }
