@@ -4,10 +4,8 @@ import './App.css';
 import { Home } from "./component/Home"
 import { Flowers } from "./component/Flowers";
 import { Earrings } from "./component/Earrings";
-import { EarringImg_Quilted } from "./component/EarringImg_Quilted";
-import { EarringImg_Masonry } from "./component/EarringImg_Masonry";
-import { Header } from "./molecules/Header";
-// import { Routes } from "react-router";
+import { AboutAccessories } from "./component/AboutAccessories";
+import { ProductionRecord } from "./component/ProductionRecord";
 
 export const App = () => {
   return (
@@ -16,6 +14,8 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Flowers" element={<Flowers />} />
         <Route path="/Earrings" element={<Earrings />} />
+        <Route path="/AboutAccessories" element={<AboutAccessories />} />
+        <Route path="/ProductionRecord" element={<ProductionRecord />} />
       </Routes>
     </BrowserRouter>
   );

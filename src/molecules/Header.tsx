@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -26,6 +26,7 @@ const HideOnScroll = ({children}: Props) => {
 
 export const Header = (props:PropsWindw) => {
     const location = useLocation();
+    const navigate = useNavigate();
     
     const useStyles = makeStyles((theme: Theme) => {
             return createStyles({
@@ -36,7 +37,8 @@ export const Header = (props:PropsWindw) => {
                 title: {
                     color: `${ location.pathname === `/` ? `#FFFFFF` : `#828282`}`,
                     textAlign:"center",
-                    fontFamily:"Comic Sans MS"
+                    fontFamily:"Comic Sans MS",
+                    cursor: 'pointer'
                 }
             })
     });
@@ -49,7 +51,7 @@ export const Header = (props:PropsWindw) => {
         <HideOnScroll {...props}>
             <AppBar  elevation={0} className={classes.header}>
                 <Toolbar variant="dense">
-                    <Typography variant="h6" className={classes.title} >
+                    <Typography variant="h6" className={classes.title} onClick={() => navigate('/')}>
                         Riko's handmade
                     </Typography>
                 </Toolbar>
