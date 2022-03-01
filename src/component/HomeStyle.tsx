@@ -10,8 +10,8 @@ export const useStyles = makeStyles((theme:Theme) =>
         top_background: {
             height: '80vh',
             width: '100%',
-            opacity: '60%',
-            scaleMode: 'fill',
+            opacity: '70%',
+            objectFit: 'cover'
         },
         curtain: {
             position: 'absolute',
