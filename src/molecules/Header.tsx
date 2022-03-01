@@ -7,22 +7,6 @@ import Typography from "@material-ui/core/Typography";
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 
-// const useStyles = makeStyles((theme: Theme) => {
-//     const location = useLocation();
-//     console.log(location.pathname)
-//         return createStyles({
-//             header: {
-//                 backgroundColor: `${ location.pathname === `/` ? `rgba(255, 255, 255, 0)` : `#FFFFFF`}`,
-//                 boxShadow: `${ location.pathname === `/` ? `0` : `0px 2px 8px rgba(0, 0, 0, 0.25)`}`
-//             },
-//             title: {
-//                 color: `${ location.pathname === `/` ? `#FFFFFF` : `#828282`}`,
-//                 textAlign:"center",
-//                 fontFamily:"Comic Sans MS"
-//             }
-//         })
-// });
-
 interface Props {
     children: React.ReactElement;
 }
