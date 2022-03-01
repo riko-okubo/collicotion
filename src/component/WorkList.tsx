@@ -1,37 +1,66 @@
-import React from 'react';
-import './WorkList-style.css'
+import React, { useContext } from "react";
+import { useState } from "react";
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import { IconButton } from '@mui/material';
+import { useStyles } from './FlowersStyle';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
 
-import red_rose from './img/red-rose.jpg';
-import blue_rose from './img/blue-rose.jpg'
-import yellow_rose from './img/yellow-rose.jpg'
-import violet_rose from './img/violet-rose.jpg'
-import black_rose from './img/black-rose.jpg'
-import deeppink_rose from './img/deeppink-rose.jpg'
+type Props = {
+    data:{
+        img: string,
+        title: string,
+        modal: string
+    }[]
+}
 
-export const WorkList = () => {
+export const WorkList = (props:Props) => {
+    const data = props.data;
+
+    const classes = useStyles();
+
+    const [open, setOpen] = useState(-1);
+    const onOpenDialog = (i: number) => {
+        console.log(i);
+        setOpen(i);
+    }
+    const onCloseDialog = () => {
+        setOpen(-1);
+    }
     return (
         <>
-        <h1>Flower Page</h1>
-        <div className="ListBase">
-            <div className="WorkImg">
-                <img src={red_rose} alt="red-rose" />
-            </div>
-            <div className="WorkImg">
-                <img src={blue_rose} alt="blue-rose" />
-            </div>
-            <div className="WorkImg">
-                <img src={yellow_rose} alt="yellow-rose" />
-            </div>
-            <div className="WorkImg">
-                <img src={violet_rose} alt="violet-rose" />
-            </div>
-            <div className="WorkImg">
-                <img src={black_rose} alt="black-rose" />
-            </div>
-            <div className="WorkImg">
-                <img src={deeppink_rose} alt="deeppink-rose" />
-            </div>
-        </div>
+            <Grid container className={classes.container}>
+                {data.map((item, index) => (
+                    <Grid item className={classes.item} key={index}>
+                        <img src={item.img} />
+                        <IconButton 
+                            onClick={() => onOpenDialog(index)}
+                            style={{position: "absolute",
+                                    bottom:58,
+                                    right:10,
+                                    color: "rgba(189, 189, 189, 0.80)"}} >
+                                <FullscreenIcon />
+                        </IconButton>
+                        <Modal
+                            open={index === open}
+                            onClose={onCloseDialog}
+                            closeAfterTransition
+                            BackdropProps={{
+                                timeout: 600,
+                            }}
+                        >
+                            <Fade in={index === open}>
+                                <div className={classes.modal}>
+                                    <img src={item.modal} />
+                                </div>
+                            </Fade>
+                        </Modal>
+                        <p>{item.title} </p>
+                    </Grid>
+                ))}
+            </Grid>
         </>
     )
 }

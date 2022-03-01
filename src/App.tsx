@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import { Home } from "./component/Home"
+import { Flowers } from "./component/Flowers";
+import { Earrings } from "./component/Earrings";
 import { EarringImg_Quilted } from "./component/EarringImg_Quilted";
 import { EarringImg_Masonry } from "./component/EarringImg_Masonry";
 import { Header } from "./molecules/Header";
@@ -12,9 +14,11 @@ export const App = () => {
     <BrowserRouter>
     <Home />
       <Routes>
-        <Route path="/" element={Home} />
-        <Route path="/EarringImg_Quilted" element={EarringImg_Quilted} />
-        <Route path="/EarringImg_Maisonry" element={EarringImg_Masonry} />
+        {/* <Route path="/EarringImg_Quilted" element={<EarringImg_Quilted />} /> */}
+        {/* <Route path="/EarringImg_Masonry" element={<EarringImg_Masonry />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/Flowers" element={<Flowers />} />
+        <Route path="/Earrings" element={<Earrings />} />
       </Routes>
     </BrowserRouter>
   );
