@@ -60,14 +60,6 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-
-            <div className={classes.footer}>
-                <ul>
-                    <li>アクセサリーについて</li>
-                    <li>ホームページ製作記録</li>
-                    <li>プロフィール</li>
-                </ul>
-            </div>
         </div>
         </Layout>
     )

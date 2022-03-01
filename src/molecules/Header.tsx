@@ -31,7 +31,7 @@ export const Header = (props:PropsWindw) => {
             return createStyles({
                 header: {
                     backgroundColor: `${ location.pathname === `/` ? `rgba(255, 255, 255, 0)` : `#FFFFFF`}`,
-                    boxShadow: `${ location.pathname === `/` ? `0` : `0px 2px 8px rgba(0, 0, 0, 0.25)`}`
+                    boxShadow: `${ location.pathname === `/` ? `0` : `0px 5px 8px rgba(215, 201, 183, 0.4)`}`
                 },
                 title: {
                     color: `${ location.pathname === `/` ? `#FFFFFF` : `#828282`}`,
