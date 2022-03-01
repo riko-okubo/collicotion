@@ -12,10 +12,7 @@ import { Header } from "./molecules/Header";
 export const App = () => {
   return (
     <BrowserRouter>
-    <Home />
       <Routes>
-        {/* <Route path="/EarringImg_Quilted" element={<EarringImg_Quilted />} /> */}
-        {/* <Route path="/EarringImg_Masonry" element={<EarringImg_Masonry />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="/Flowers" element={<Flowers />} />
         <Route path="/Earrings" element={<Earrings />} />
