@@ -20,6 +20,20 @@ const useStyles = makeStyles((theme:Theme) =>
                 color: '#666A71',
                 fontSize: '1em',
                 cursor: 'pointer'
+            },
+            [theme.breakpoints.down('sm')]: {
+                "& ul": {
+                    margin: '1em 0.8em',
+                    textAlign: 'end',
+                    listStyleType: 'none'
+                },
+                "& li":{
+                    margin: '0.6em',
+                    fontFamily: 'cuesive',
+                    color: '#666A71',
+                    fontSize: '0.6em',
+                    cursor: 'pointer'
+                }
             }
         }
     })

@@ -38,15 +38,20 @@ export const Header = (props:PropsWindw) => {
                     color: `${ location.pathname === `/` ? `#FFFFFF` : `#828282`}`,
                     textAlign:"center",
                     fontFamily:"Comic Sans MS",
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    [theme.breakpoints.down('sm')]: {
+                        fontSize: '0.6em'
+                    }
                 }
             })
     });
-    console.log(location.pathname);
+    // console.log(location.pathname);
     useEffect(() => {
 
     }, [location.pathname])
+
     const classes = useStyles();
+
     return(
         <HideOnScroll {...props}>
             <AppBar  elevation={0} className={classes.header}>

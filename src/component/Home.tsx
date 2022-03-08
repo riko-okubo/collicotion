@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useStyles } from './HomeStyle';
 import { Button } from "@material-ui/core";
 import { useNavigate } from 'react-router-dom';
+import { Theme } from '@mui/material';
 
 import { Layout } from '../molecules/Layout';
 import backgroundImg from '../component/Image/backgroundImg.jpg';
@@ -21,16 +22,11 @@ export const Home = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
-    
+    }, []);
 
     return (
-        <Layout>
-            {/* <div className={classes.header}>
-                <Header />
-            </div> */}
-            
-        <div className={classes.top}>
+        <Layout>            
+        <div className={classes.top} >
                 <img className={classes.top_background} src={backgroundImg} />
                 <div className={classes.curtain}>
                     <div className={classes.title}>
@@ -38,7 +34,7 @@ export const Home = () => {
                         <p>~ riko's handmade collection ~</p>
                     </div>
                 </div>
-            
+        </div>    
 
             <div className={classes.body}>
                 <div className={classes.content}>
@@ -60,7 +56,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        
         </Layout>
     )
 }
