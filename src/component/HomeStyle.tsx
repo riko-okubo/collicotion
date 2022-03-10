@@ -71,8 +71,11 @@ export const useStyles = makeStyles((theme:Theme) =>
                     width: '25em',
                     height: 'auto',
                     borderRadius: '50%',
+                    transition: '0.3s',
                     "&:hover": {
-                        filter: 'opacity(60%)'
+                        filter: 'opacity(60%)',
+                        transform: 'scale(1.1)',
+                        transition: '0.3s'
                     },
                     "&:active": {
                         filter: 'opacity(60%)'

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import { Layout } from "../molecules/Layout";
 import { FlowerData } from "./Item/FlowerData";
 import { WorkList } from "./WorkList";
+import { BackButton } from "../molecules/BackButton";
 
 export const Flowers = () => {
     const classes = useStyles();
@@ -17,6 +18,7 @@ export const Flowers = () => {
             <Box className={classes.box}>
                 <h1>3D Flowers</h1>
                 <WorkList data={FlowerData} />
+                <BackButton />
             </Box>
         </Layout>
     );
