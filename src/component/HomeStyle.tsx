@@ -25,7 +25,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             left: '15%'
         },
         title: {
-            fontFamily: 'cursive',
+            fontFamily: 'M PLUS Rounded 1c',
             color: '#666A71',
             width:'100%',
             textAlign: 'center',
@@ -55,57 +55,52 @@ export const useStyles = makeStyles((theme:Theme) =>
             color: '#666A71',
             margin: '6em auto',
             overflowX: 'hidden',
+            "& button": {
+                    width: '100%',
+                    margin: '5em 0',
+             },
             [theme.breakpoints.down('sm')]: {
-                margin: '0.5em auto'
-            }
+                margin: '1em auto',
+                "& button": {
+                    width: '80%',
+                    display: "block",
+                    margin: '1em auto 1.5em auto'
+                }
+            },
         },
-        content: {
-            [theme.breakpoints.up('sm')]: {
-                width: '100%',
-                margin: '5em 0',
+        content: { 
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                "&:hover": {
+                    filter: 'opacity(60%)',
+                    transform: 'scale(1.1)',
+                    transition: '0.3s'
+                },
+                "&:active": {
+                    filter: 'opacity(60%)'
+                },
                 "& img": {
                     margin: '0 3em',
                     width: '25em',
                     height: 'auto',
                     borderRadius: '50%',
                     transition: '0.3s',
-                    "&:hover": {
-                        filter: 'opacity(60%)',
-                        transform: 'scale(1.1)',
-                        transition: '0.3s'
-                    },
-                    "&:active": {
-                        filter: 'opacity(60%)'
-                    }
                 },
-            },
-            [theme.breakpoints.down('sm')]: {
-                width: '100%',
-                margin: '2em 0',
-                display: 'flex',
+            [theme.breakpoints.down('sm')]: { 
+                display: "flex", 
                 flexDirection: 'column',
-                alignItems: 'center',
                 "& img": {
                     margin: '0 1em',
                     width: '12em',
                     height: 'auto',
-                    borderRadius: '50%',
-                    "&:hover": {
-                        filter: 'opacity(60%)'
-                    },
-                    "&:active": {
-                        filter: 'opacity(60%)'
-                    }
+                    borderRadius: '50%'
                 },
             }
         },
         sub_title: {
             fontFamily: 'cursive',
             textAlign: 'center',
-            width: '30em',
             "& h3": {
                 fontSize: '3em',
                 color: '#666A71'

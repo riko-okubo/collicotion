@@ -37,24 +37,25 @@ export const Home = () => {
         </div>    
 
             <div className={classes.body}>
-                <div className={classes.content}>
-                    <Button onClick={() => navigate('/Earrings')}>
-                        <img src={EarringsTop} />
-                    </Button>
-                    <div className={classes.sub_title}>
-                        <h3>Earrings</h3>
-                        <p>小さなドライフラワーをUVレジンで包んだピイアスとイヤリング</p>
-                    </div>
-                </div>
-                <div className={classes.content}>
+                    <Button  onClick={() => navigate('/Earrings')} >
+                        <div className={classes.content}>
+                            <img src={EarringsTop} />
+                            <div className={classes.sub_title}>
+                                <h3>Earrings</h3>
+                                <p>小さなドライフラワーをUVレジンで包んだピイアスとイヤリング</p>
+                            </div>
+                        </div>
+                    </Button>                
                     <Button onClick={() => navigate('/Flowers')}>
-                        <img src={FlowersTop} />
+                        <div className={classes.content}>
+                            <img src={FlowersTop} />
+                            <div className={classes.sub_title}>
+                                <h3>3D Flowers</h3>
+                                <p>ワイヤーで成形し、マニキュアとUVレジンで膜を張った花びらで作ったお花</p>
+                            </div>
+                        </div>
                     </Button>
-                    <div className={classes.sub_title}>
-                        <h3>3D Flowers</h3>
-                        <p>ワイヤーで成形し、マニキュアとUVレジンで膜を張った花びらで作ったお花</p>
-                    </div>
-                </div>
+                
             </div>
         
         </Layout>
