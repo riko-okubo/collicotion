@@ -3,6 +3,7 @@ import { createStyles, makeStyles,Theme } from "@material-ui/core/styles";
 export const useStyles = makeStyles((theme:Theme) => 
     createStyles({
         top: {
+            height: '80%',
             position: 'relative',
             margin: 0,
             overflowX: 'hidden'
@@ -101,6 +102,7 @@ export const useStyles = makeStyles((theme:Theme) =>
         sub_title: {
             fontFamily: 'cursive',
             textAlign: 'center',
+            width: '30em',
             "& h3": {
                 fontSize: '3em',
                 color: '#666A71'
@@ -110,6 +112,9 @@ export const useStyles = makeStyles((theme:Theme) =>
                 color: '#BDBDBD',
             },
             [theme.breakpoints.down('sm')]: {
+                fontFamily: 'cursive',
+                textAlign: 'center',
+                width: '15em',
                 "& h3": {
                     fontSize: '1em',
                     color: '#666A71'
