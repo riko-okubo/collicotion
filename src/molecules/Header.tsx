@@ -37,10 +37,12 @@ export const Header = (props:PropsWindw) => {
                 title: {
                     color: `${ location.pathname === `/` ? `#FFFFFF` : `#828282`}`,
                     textAlign:"center",
-                    fontFamily:"Comic Sans MS",
+                    marginTop: '0.2em',
+                    fontFamily:"Sweetgrend",
+                    fontSize: '1.8em',
                     cursor: 'pointer',
                     [theme.breakpoints.down('sm')]: {
-                        fontSize: '0.6em'
+                        fontSize: '1em'
                     }
                 }
             })

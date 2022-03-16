@@ -7,6 +7,9 @@ import { IconButton } from '@mui/material';
 import { useStyles } from './FlowersStyle';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
+import HighlightAltIcon from '@mui/icons-material/HighlightAlt';
 
 type Props = {
     data:{
@@ -29,19 +32,18 @@ export const WorkList = (props:Props) => {
     const onCloseDialog = () => {
         setOpen(-1);
     }
+    const handleClose = () => {
+        setOpen(-1);
+    }
+
     return (
         <>
             <Grid container className={classes.container}>
                 {data.map((item, index) => (
                     <Grid item className={classes.item} key={index}>
-                        <img src={item.img} />
-                        <IconButton 
-                            onClick={() => onOpenDialog(index)}
-                            style={{position: "absolute",
-                                    bottom:58,
-                                    right:10,
-                                    color: "rgba(189, 189, 189, 0.80)"}} >
-                                <FullscreenIcon />
+                        <img src={item.img} onClick={() => onOpenDialog(index)}/>
+                        <IconButton>
+                                < HighlightAltIcon className={classes.button}/>
                         </IconButton>
                         <Modal
                             open={index === open}
@@ -49,11 +51,11 @@ export const WorkList = (props:Props) => {
                             closeAfterTransition
                             BackdropProps={{
                                 timeout: 600,
-                            }}
-                        >
+                            }}>
                             <Fade in={index === open}>
                                 <div className={classes.modal}>
                                     <img src={item.modal} />
+                                    <Button style={{margin:'1em', textAlign:'center', color: '#FFFFFF'}} onClick={handleClose}>✕ close</Button>
                                 </div>
                             </Fade>
                         </Modal>

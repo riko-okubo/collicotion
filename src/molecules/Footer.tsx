@@ -23,12 +23,12 @@ const useStyles = makeStyles((theme:Theme) =>
             },
             [theme.breakpoints.down('sm')]: {
                 "& ul": {
-                    margin: '1em 0.8em',
+                    margin: '1.2em 0.8em',
                     textAlign: 'end',
                     listStyleType: 'none'
                 },
                 "& li":{
-                    margin: '0.6em',
+                    margin: '1em',
                     fontFamily: 'cuesive',
                     color: '#666A71',
                     fontSize: '0.6em',

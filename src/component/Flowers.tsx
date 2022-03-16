@@ -16,7 +16,7 @@ export const Flowers = () => {
     return(
         <Layout>
             <Box className={classes.box}>
-                <h1>3D Flowers</h1>
+                <h1>Flowers</h1>
                 <WorkList data={FlowerData} />
                 <BackButton />
             </Box>

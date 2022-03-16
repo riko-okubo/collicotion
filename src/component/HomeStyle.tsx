@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             left: '15%'
         },
         title: {
-            fontFamily: 'M PLUS Rounded 1c',
+            fontFamily: 'Sweetgrend',
             color: '#666A71',
             width:'100%',
             textAlign: 'center',
@@ -34,25 +34,26 @@ export const useStyles = makeStyles((theme:Theme) =>
             top: '50%',
             justifyContent: 'center',
                 "& h1": {
-                    fontSize: '3em',
+                    fontSize: '6em',
                     margin: 0,            },
                 "& p": {
-                    fontSize: '1.8em',
+                    fontSize: '3.5em',
                     margin: 0
                 },
             [theme.breakpoints.down('xs')]: {
                 "& h1": {
-                    fontSize: '1.2em',
+                    fontSize: '2.2em',
                     margin: 0,            },
                 "& p": {
-                    fontSize: '0.5em',
+                    fontSize: '1.1em',
                     margin: 0
                 },
             }
         },
 
         body: {
-            fontFamily: 'cursive',
+            // fontFamily: 'Sweetgrend',
+            
             color: '#666A71',
             margin: '6em auto',
             overflowX: 'hidden',
@@ -100,26 +101,33 @@ export const useStyles = makeStyles((theme:Theme) =>
             }
         },
         sub_title: {
-            fontFamily: 'cursive',
+            textTransform: 'none',
             textAlign: 'center',
             width: '30em',
             "& h3": {
-                fontSize: '3em',
+                margin: 0,
+                fontFamily: 'Sweetgrend',
+                fontSize: '7em',
                 color: '#666A71'
             },
             "& p": {
+                margin: 0,
+                fontFamily: '',
                 fontSize: '1em',
                 color: '#BDBDBD',
             },
             [theme.breakpoints.down('sm')]: {
-                fontFamily: 'cursive',
                 textAlign: 'center',
                 width: '15em',
                 "& h3": {
-                    fontSize: '1em',
+                    
+                    fontFamily: 'Sweetgrend',
+                    fontSize: '3em',
                     color: '#666A71'
                 },
                 "& p": {
+                    margin: 0,
+                    fontFamily: '',
                     fontSize: '0.5em',
                     color: '#BDBDBD',
                 }

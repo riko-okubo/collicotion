@@ -60,7 +60,7 @@ export const Home = () => {
                     <div className={classes.content}>
                         <img src={FlowersTop} />
                         <div className={classes.sub_title}>
-                            <h3>3D Flowers</h3>
+                            <h3>Flowers</h3>
                             <p>ワイヤーで成形し、マニキュアとUVレジンで膜を張った花びらで作ったお花</p>
                         </div>
                     </div>
