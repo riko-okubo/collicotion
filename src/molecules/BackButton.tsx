@@ -7,7 +7,7 @@ export const BackButton = () => {
 
     return(
         <IconButton 
-        onClick={() => navigate('/')} 
+        onClick={() => navigate( -1 )} 
         style={{color: "#BDBDBD",
                 fontSize: "small",
                 display: "block",
