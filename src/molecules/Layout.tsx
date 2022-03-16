@@ -8,9 +8,9 @@ type Props = {
 
 export const Layout: VFC<Props> = ({ children }) => {
     return (
-        <>
+        <>  
             <Header />
-            <div>{children}</div>
+                <div>{children}</div>
             <Footer />
         </>
     )
