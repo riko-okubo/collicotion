@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme:Theme) =>
             },
             "& li":{
                 margin: '1em',
-                fontFamily: 'cuesive',
+                fontFamily: 'Kokoro, cuesive',
                 color: '#666A71',
                 fontSize: '1em',
                 cursor: 'pointer'
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme:Theme) =>
                 },
                 "& li":{
                     margin: '1em',
-                    fontFamily: 'cuesive',
+                    fontFamily: 'Kokoro, cuesive',
                     color: '#666A71',
                     fontSize: '0.6em',
                     cursor: 'pointer'

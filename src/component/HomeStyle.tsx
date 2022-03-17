@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             left: '15%'
         },
         title: {
-            fontFamily: 'Sweetgrend',
+            fontFamily: 'Caveat, cursive, sans-serif',
             color: '#666A71',
             width:'100%',
             textAlign: 'center',
@@ -37,7 +37,7 @@ export const useStyles = makeStyles((theme:Theme) =>
                     fontSize: '6em',
                     margin: 0,            },
                 "& p": {
-                    fontSize: '3.5em',
+                    fontSize: '2.5em',
                     margin: 0
                 },
             [theme.breakpoints.down('xs')]: {
@@ -45,15 +45,13 @@ export const useStyles = makeStyles((theme:Theme) =>
                     fontSize: '2.2em',
                     margin: 0,            },
                 "& p": {
-                    fontSize: '1.1em',
+                    fontSize: '0.8em',
                     margin: 0
                 },
             }
         },
 
         body: {
-            // fontFamily: 'Sweetgrend',
-            
             color: '#666A71',
             margin: '6em auto',
             overflowX: 'hidden',
@@ -106,29 +104,28 @@ export const useStyles = makeStyles((theme:Theme) =>
             width: '30em',
             "& h3": {
                 margin: 0,
-                fontFamily: 'Sweetgrend',
+                fontFamily: 'Caveat, cursive, sans-serif',
                 fontSize: '7em',
                 color: '#666A71'
             },
             "& p": {
                 margin: 0,
-                fontFamily: '',
-                fontSize: '1em',
+                fontFamily: 'Kokoro, cuesive',
+                fontSize: '1.2em',
                 color: '#BDBDBD',
             },
             [theme.breakpoints.down('sm')]: {
                 textAlign: 'center',
                 width: '15em',
                 "& h3": {
-                    
-                    fontFamily: 'Sweetgrend',
+                    fontFamily: 'Caveat, cursive, sans-serif',
                     fontSize: '3em',
                     color: '#666A71'
                 },
                 "& p": {
                     margin: 0,
-                    fontFamily: '',
-                    fontSize: '0.5em',
+                    fontFamily: 'Kokoro, cuesive',
+                    fontSize: '0.8em',
                     color: '#BDBDBD',
                 }
             }
