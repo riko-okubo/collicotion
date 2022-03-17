@@ -9,6 +9,7 @@ export const BackButton = () => {
         <IconButton 
         onClick={() => navigate( -1 )} 
         style={{color: "#BDBDBD",
+                fontFamily: "Caveat, cursive, sans-serif",
                 fontSize: "small",
                 display: "block",
                 marginLeft: "auto",

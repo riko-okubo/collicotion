@@ -10,8 +10,12 @@ export const useStyles = makeStyles((theme: Theme) =>
                 textAlign: 'center',
                 color: '#666A71',
                 fontSize: '5em',
-                fontFamily: 'Sweetgrend',
-                margin: '1.2em 0 0.2em 0'
+                fontFamily: 'Caveat, cursive, sans-serif',
+                margin: '1.2em 0 0.2em 0',
+                [theme.breakpoints.down("sm")]: {
+                    fontSize: '3em',
+                    margin: '1.4em 0 0.2em 0',
+                }
             }
         },
         container:{
@@ -20,7 +24,8 @@ export const useStyles = makeStyles((theme: Theme) =>
             padding: '5% 0',
             [theme.breakpoints.down("sm")]: {
                 gap: '3em',
-                justifyContent: 'center',            }
+                justifyContent: 'center',
+            }
         },
         item:{
             position: 'relative',
@@ -34,8 +39,8 @@ export const useStyles = makeStyles((theme: Theme) =>
                 backgroundColor: '#FFFFFF'
             },
             "& p": {
-                fontFamily: 'Sweetgrend',
-                fontSize: '2em',
+                fontFamily: 'Caveat, cursive, sans-serif',
+                fontSize: '1.5em',
                 color: '#BDBDBD'
             },
             [theme.breakpoints.down("sm")]: {
@@ -50,8 +55,8 @@ export const useStyles = makeStyles((theme: Theme) =>
                 },
                 "& p": {
                     margin: 0.2,
-                    fontFamily: 'Sweetgrend',
-                    fontSize: '1.2em',
+                    fontFamily: 'Caveat, cursive, sans-serif',
+                    fontSize: '0.8em',
                     color: '#BDBDBD'
                 },
             }
