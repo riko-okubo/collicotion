@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             opacity: '70%',
             objectFit: 'cover',
             width: '100%',
-            [theme.breakpoints.down("md")]: {
+            [theme.breakpoints.down("sm")]: {
                 width: '130%',
             }
         },
@@ -40,7 +40,7 @@ export const useStyles = makeStyles((theme:Theme) =>
                     fontSize: '2.5em',
                     margin: 0
                 },
-            [theme.breakpoints.down('xs')]: {
+            [theme.breakpoints.down('sm')]: {
                 "& h1": {
                     fontSize: '2.2em',
                     margin: 0,            },
