@@ -21,9 +21,9 @@ const useStyles = makeStyles((theme:Theme) =>
                 fontSize: '1em',
                 cursor: 'pointer'
             },
-            [theme.breakpoints.down('sm')]: {
+            [theme.breakpoints.down('xs')]: {
                 "& ul": {
-                    margin: '1.2em 0.8em',
+                    margin: '1.5em 0.8em',
                     textAlign: 'end',
                     listStyleType: 'none'
                 },
@@ -47,7 +47,7 @@ export const Footer = () => {
             <ul>
                 <li onClick={() => navigate('/AboutAccessories')}>アクセサリーについて</li>
                 <li onClick={() => navigate('/ProductionRecord')}>ホームページ製作記録</li>
-                <li>プロフィール</li>
+                {/* <li>プロフィール</li> */}
             </ul>
         </div>
     )
