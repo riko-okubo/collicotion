@@ -1,15 +1,11 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import FullscreenIcon from '@mui/icons-material/Fullscreen';
-import { IconButton } from '@mui/material';
-import { useStyles } from './FlowersStyle';
+import { useStyles } from './DisplayStyle';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
-
-import HighlightAltIcon from '@mui/icons-material/HighlightAlt';
+import { useSpring, animated } from 'react-spring'
 
 type Props = {
     data:{
@@ -24,9 +20,11 @@ export const WorkList = (props:Props) => {
 
     const classes = useStyles();
 
+    const [fadein, setFadein] = useSpring(() => ({ opacity: 0 }));
+
     const [open, setOpen] = useState(-1);
     const onOpenDialog = (i: number) => {
-        console.log(i);
+        // console.log(i);
         setOpen(i);
     }
     const onCloseDialog = () => {
@@ -36,30 +34,33 @@ export const WorkList = (props:Props) => {
         setOpen(-1);
     }
 
+    useEffect(() => {
+        setFadein({ opacity: 1, config: {friction: 200 } });
+    }, []);
+
     return (
         <>
             <Grid container className={classes.container}>
                 {data.map((item, index) => (
                     <Grid item className={classes.item} key={index}>
-                        <img src={item.img} onClick={() => onOpenDialog(index)}/>
-                        <IconButton>
-                                < HighlightAltIcon className={classes.button}/>
-                        </IconButton>
-                        <Modal
-                            open={index === open}
-                            onClose={onCloseDialog}
-                            closeAfterTransition
-                            BackdropProps={{
-                                timeout: 600,
-                            }}>
-                            <Fade in={index === open}>
-                                <div className={classes.modal}>
-                                    <img src={item.modal} />
-                                    <Button style={{margin:'1em', textAlign:'center', color: '#FFFFFF'}} onClick={handleClose}>✕ close</Button>
-                                </div>
-                            </Fade>
-                        </Modal>
-                        <p>{item.title} </p>
+                        <animated.div style={fadein}>
+                            <img src={item.img} onClick={() => onOpenDialog(index)}/>
+                            <Modal
+                                open={index === open}
+                                onClose={onCloseDialog}
+                                closeAfterTransition
+                                BackdropProps={{
+                                    timeout: 600,
+                                }}>
+                                <Fade in={index === open}>
+                                    <div className={classes.modal}>
+                                        <img src={item.modal} />
+                                        <Button style={{margin:'1em', textAlign:'center', color: '#FFFFFF'}} onClick={handleClose}>✕ close</Button>
+                                    </div>
+                                </Fade>
+                            </Modal>
+                            <p>{item.title} </p>
+                        </animated.div>
                     </Grid>
                 ))}
             </Grid>

@@ -8,7 +8,7 @@ import backgroundImg from '../component/Image/backgroundImg.jpg';
 import EarringsTop from '../component/Image/EarringsTop.jpg';
 import FlowersTop from '../component/Image/FlowersTop.jpg';
 
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from 'react-spring';
 
 
 export const Home = () => {

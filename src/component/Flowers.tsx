@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useStyles } from './FlowersStyle';
+import { useStyles } from '../component/DisplayStyle';
 import Box from '@mui/material/Box';
 import { Layout } from "../molecules/Layout";
 import { FlowerData } from "./Item/FlowerData";
