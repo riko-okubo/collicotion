@@ -35,7 +35,7 @@ export const EarringsData = [
     // },
     {
         img: hook_BlueSkyblueWhite,
-        title: 'hook_blue-skyblue-white',
+        title: 'Blue Skyblue White',
         modal: hook_BlueSkyblueWhite_,
     },
     // {
@@ -48,12 +48,12 @@ export const EarringsData = [
     // },
     {
         img: hook_OrangeYellowWhite,
-        title: 'hook_orange-yellow-white',
+        title: 'Orange Yellow White',
         modal: hook_OrangeYellowWhite_,
     },
     {
         img: hook_PinkRed,
-        title: 'hook_PinkRed',
+        title: 'Pink Red',
         modal: hook_PinkRed_,
     },
     // {
@@ -62,47 +62,47 @@ export const EarringsData = [
     // },
     {
         img: hook_RedOrangeYellow,
-        title: 'hook_RedOrangeYellow',
+        title: 'Red Orange Yellow',
         modal: hook_RedOrangeYellow_,
     },
     {
         img: hook_VioletRedPink,
-        title: 'hook_VioletRedPink',
+        title: 'Violet Red Pink',
         modal: hook_VioletRedPink_,
     },
     {
         img: stud_Blue,
-        title: 'stud_Blue',
+        title: 'Blue',
         modal: stud_Blue_,
     },
     {
         img: stud_BlueWhite,
-        title: 'stud_BlueWhite',
+        title: 'Blue White',
         modal: stud_BlueWhite_,
     },
     {
         img: stud_Green,
-        title: 'stud_Green',
+        title: 'Green',
         modal: stud_Green_,
     },
     {
         img: stud_Orange,
-        title: 'stud_Orange',
+        title: 'Orange',
         modal: stud_Orange_,
     },
     {
         img: stud_OrangeGreenYellow,
-        title: 'stud_OrangeGreenYellow',
+        title: 'Orange Green Yellow',
         modal: stud_OrangeGreenYellow_,
     },
     {
         img: stud_RedWhite,
-        title: 'stud_RedWhite',
+        title: 'Red White',
         modal: stud_RedWhite_,
     },
     {
         img: stud_VioletPinkWhite,
-        title: 'stud_VioletPinkWhite',
+        title: 'Violet Pink White',
         modal: stud_VioletPinkWhite_,
     },
 ]
