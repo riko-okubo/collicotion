@@ -1,9 +1,11 @@
 import React from "react";
 import { BackButton } from "../molecules/BackButton";
 import { Page404 } from "../molecules/Page404";
+import { test } from "./test";
 
 export const ProductionRecord = () => {
-    
+    const contents = test();
+    console.log(contents);
   return(
         <>
           <Page404 />
