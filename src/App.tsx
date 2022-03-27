@@ -7,6 +7,7 @@ import { Earrings } from "./pages/Earrings";
 import { AboutAccessories } from "./pages/AboutAccessories";
 import { ProductionRecord } from "./pages/ProductionRecord";
 import { Page404 } from "./pages/Page404";
+import { Record1 } from "./pages/Record1";
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
         <Route path="/Earrings" element={<Earrings />} />
         <Route path="/AboutAccessories" element={<AboutAccessories />} />
         <Route path="/ProductionRecord" element={<ProductionRecord />} />
+        <Route path="/record1" element={<Record1 />} /> 
         <Route element={<Page404 />} />
       </Routes>
     </BrowserRouter>
