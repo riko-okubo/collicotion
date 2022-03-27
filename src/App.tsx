@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import { Home } from "./component/Home"
-import { Flowers } from "./component/Flowers";
-import { Earrings } from "./component/Earrings";
-import { AboutAccessories } from "./component/AboutAccessories";
-import { ProductionRecord } from "./component/ProductionRecord";
-import { Page404 } from "./molecules/Page404";
+import { Home } from "./pages/Home"
+import { Flowers } from "./pages/Flowers";
+import { Earrings } from "./pages/Earrings";
+import { AboutAccessories } from "./pages/AboutAccessories";
+import { ProductionRecord } from "./pages/ProductionRecord";
+import { Page404 } from "./pages/Page404";
 
 export const App = () => {
   return (

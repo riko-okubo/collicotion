@@ -1,8 +1,8 @@
 import React from "react";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { Box } from "@mui/material";
-import notfound from "../component/Image/notfound.jpg";
-import { BackButton } from "./BackButton";
+import notfound from "../component/atoms/Image/notfound.jpg";
+import { BackButton } from "../component/atoms/BackButton";
 
 const useStyles = makeStyles((theme:Theme) =>
     createStyles({
