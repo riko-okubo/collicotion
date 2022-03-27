@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { useStyles } from '../component/DisplayStyle';
+import { useStyles } from '../style/DisplayStyle';
 import Box from '@mui/material/Box';
-import { Layout } from "../molecules/Layout";
-import { EarringsData } from "./Item/EarringsData";
-import { WorkList } from "./WorkList";
-import { BackButton } from "../molecules/BackButton";
+import { Layout } from "../component/organisms/Layout";
+import { EarringsData } from "../component/atoms/data/EarringsData";
+import { WorkList } from "../component/organisms/WorkList";
+import { BackButton } from "../component/atoms/BackButton";
 
 export const Earrings = () => {
     const classes = useStyles();

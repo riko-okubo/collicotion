@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import { useStyles } from './HomeStyle';
+import { useStyles } from '../style/HomeStyle';
 import { Button } from "@material-ui/core";
 import { useNavigate } from 'react-router-dom';
 
-import { Layout } from '../molecules/Layout';
-import backgroundImg from '../component/Image/backgroundImg.jpg';
-import EarringsTop from '../component/Image/EarringsTop.jpg';
-import FlowersTop from '../component/Image/FlowersTop.jpg';
+import { Layout } from '../component/organisms/Layout';
+import backgroundImg from '../component/atoms/Image/backgroundImg.jpg';
+import EarringsTop from '../component/atoms/Image/EarringsTop.jpg';
+import FlowersTop from '../component/atoms/Image/FlowersTop.jpg';
 
 import { useSpring, animated } from 'react-spring';
 

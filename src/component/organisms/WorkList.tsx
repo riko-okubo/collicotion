@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Grid from '@mui/material/Grid';
-import { useStyles } from './DisplayStyle';
+import { useStyles } from '../../style/DisplayStyle';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';

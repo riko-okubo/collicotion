@@ -1,6 +1,6 @@
 import React from "react";
-import { BackButton } from "../molecules/BackButton";
-import { Page404 } from "../molecules/Page404";
+import { BackButton } from "../component/atoms/BackButton";
+import { Page404 } from "./Page404";
 
 export const ProductionRecord = () => {
     

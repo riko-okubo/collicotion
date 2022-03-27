@@ -1,6 +1,6 @@
 import React, { VFC, ReactNode } from "react";
-import { Footer } from "./Footer";
-import { Header } from './Header';
+import { Footer } from "../molecules/Footer";
+import { Header } from '../molecules/Header';
 
 type Props = {
     children: ReactNode;
