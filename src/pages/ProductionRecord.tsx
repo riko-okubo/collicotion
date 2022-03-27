@@ -1,9 +1,7 @@
 import React from "react";
-import { BackButton } from "../component/atoms/BackButton";
 import { Page404 } from "./Page404";
 
 export const ProductionRecord = () => {
-    
   return(
         <>
           <Page404 />
