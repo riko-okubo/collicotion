@@ -110,7 +110,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             },
             "& p": {
                 margin: 0,
-                fontFamily: 'Kokoro, cuesive',
+                fontFamily: 'Klee One, Kokoro, cuesive',
                 fontSize: '1.2em',
                 color: '#BDBDBD',
             },
@@ -124,7 +124,7 @@ export const useStyles = makeStyles((theme:Theme) =>
                 },
                 "& p": {
                     margin: 0,
-                    fontFamily: 'Kokoro, cuesive',
+                    fontFamily: 'Klee One, Kokoro, cuesive',
                     fontSize: '0.8em',
                     color: '#BDBDBD',
                 }

@@ -1,18 +1,20 @@
 import React from "react";
-import { useStyles } from "../style/RecordStyle";
-import img1_1 from "../component/atoms/RecordImg/1-1.jpg";
-import img1_2 from "../component/atoms/RecordImg/1-2.jpg";
-import img1_3 from "../component/atoms/RecordImg/1-3.jpg";
-import img1_4 from "../component/atoms/RecordImg/1-4.jpg";
-import img1_5 from "../component/atoms/RecordImg/1-5.jpg";
-import movie1_1 from "../component/atoms/RecordImg/movie1-1.mp4";
-import movie1_2 from "../component/atoms/RecordImg/movie1-2.mp4";
-import movie1_3 from "../component/atoms/RecordImg/movie1-3.mp4";
+import { useStyles } from "../../style/RecordStyle";
+import { BackButton } from "../atoms/BackButton";
+import img1_1 from "../atoms/RecordImg/1-1.jpg";
+import img1_2 from "../atoms/RecordImg/1-2.jpg";
+import img1_3 from "../atoms/RecordImg/1-3.jpg";
+import img1_4 from "../atoms/RecordImg/1-4.jpg";
+import img1_5 from "../atoms/RecordImg/1-5.jpg";
+import movie1_1 from "../atoms/RecordImg/movie1-1.mp4";
+import movie1_2 from "../atoms/RecordImg/movie1-2.mp4";
+import movie1_3 from "../atoms/RecordImg/movie1-3.mp4";
+import { Layout } from "../organisms/Layout";
 
 export const Record1 = () => {
     const classes = useStyles();
     return(
-        <>
+        <Layout>
         <html className={classes.all}>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -126,8 +128,10 @@ export const Record1 = () => {
                     <br/>
                     <p>むちゃくちゃ嬉しかったです。</p>
                 </div>
+                <br/>
+                <BackButton />
             </body>
         </html>
-        </>
+        </Layout>
     )
 }
