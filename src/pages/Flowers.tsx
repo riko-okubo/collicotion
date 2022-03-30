@@ -9,10 +9,6 @@ import { BackButton } from "../component/atoms/BackButton";
 export const Flowers = () => {
     const classes = useStyles();
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-
     return(
         <Layout>
             <Box className={classes.box}>

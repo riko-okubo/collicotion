@@ -1,9 +1,14 @@
 import { createStyles, makeStyles,Theme } from "@material-ui/core/styles";
+import miniFlowers_wide from "../component/atoms/RecordImg/miniFlowers_wide.jpg";
+import miniFlowers from "../component/atoms/RecordImg/miniFlowers.jpg";
 
 export const useStyles = makeStyles((theme:Theme) => 
     createStyles({
         all: {
-            backgroundColor: '#F2EADF'
+            backgroundImage: `url(${miniFlowers_wide})`,
+            [theme.breakpoints.down('sm')]: { 
+                backgroundImage: `url(${miniFlowers})`
+            },
         },
         body:{
             width: '60vw',
@@ -12,7 +17,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             overflowX: 'hidden',
             backgroundColor: '#FFFFFF',
             [theme.breakpoints.down('sm')]: { 
-                width: '80vw',
+                width: '70vw',
             },
             "& p": {
                 [theme.breakpoints.down('sm')]: { 

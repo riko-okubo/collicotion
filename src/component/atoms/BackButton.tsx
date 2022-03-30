@@ -10,7 +10,7 @@ export const BackButton = () => {
         onClick={() => navigate( -1 )} 
         style={{color: "#BDBDBD",
                 fontFamily: "Caveat, cursive, sans-serif",
-                fontSize: "small",
+                fontSize: "1em",
                 display: "block",
                 marginLeft: "auto",
                 marginRight: "auto", 

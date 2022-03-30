@@ -1,4 +1,4 @@
-import React, { VFC, ReactNode } from "react";
+import React, { VFC, ReactNode, useEffect } from "react";
 import { Footer } from "../molecules/Footer";
 import { Header } from '../molecules/Header';
 
@@ -7,6 +7,9 @@ type Props = {
 };
 
 export const Layout: VFC<Props> = ({ children }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <>  
             <Header />
