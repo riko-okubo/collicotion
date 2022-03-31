@@ -16,6 +16,7 @@ export const useStyles = makeStyles((theme:Theme) =>
             padding: '5%',
             overflowX: 'hidden',
             backgroundColor: '#FFFFFF',
+            fontFamily: 'sans-serif, Klee One',
             [theme.breakpoints.down('sm')]: { 
                 width: '70vw',
             },
