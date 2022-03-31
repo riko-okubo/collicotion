@@ -1,10 +1,10 @@
 import { useStyles } from "../../style/RecordStyle";
+import { Layout } from "../organisms/Layout";
 import { BackButton } from "../atoms/BackButton";
 import img2_1 from "../atoms/RecordImg/2-1.jpg";
 import img2_2 from "../atoms/RecordImg/2-2.jpg";
 import img2_3 from "../atoms/RecordImg/2-3.jpg";
 import img2_4 from "../atoms/RecordImg/2-4.jpg";
-import { Layout } from "../organisms/Layout";
 
 export const Record2 = () => {
     const classes = useStyles();
