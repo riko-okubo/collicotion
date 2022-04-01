@@ -15,11 +15,8 @@ import { Record5 } from "./component/Records/Record5";
 import { Record6 } from "./component/Records/Record6";
 import { Record7 } from "./component/Records/Record7";
 import { Record8 } from "./component/Records/Record8";
-import { useTracking } from "./Tracking";
 
 export const App = () => {
-
-  useTracking('G-EWDCFECTDW')
 
   return (
     <BrowserRouter>
