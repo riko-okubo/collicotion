@@ -10,9 +10,10 @@ import FlowersTop from "../component/atoms/Image/FlowersTop.jpg";
 import emerald_rose from "../component/atoms/Image/emerald_rose.jpg";
 
 import { useSpring, animated } from "react-spring";
+import { Popup } from "./Popup";
 
 export const Home = () => {
-  const [popupOpen, setPopupOpen] = useState(false);
+  const [popupOpen, setPopupOpen] = useState<boolean>(false);
   const [fadein, setFadein] = useSpring(() => ({ opacity: 0 }));
   const [curtain, setCurtain] = useSpring(() => ({
     from: { y: -100, opacity: 0 },
@@ -24,16 +25,26 @@ export const Home = () => {
     from: { x: 100, opacity: 0 },
   }));
 
-  const handleClose = () => {
-    setPopupOpen(false);
-  };
-
   const classes = useStyles();
   const navigate = useNavigate();
 
+  const webStorage = () => {
+    if (sessionStorage.getItem("access")) {
+      console.log("2回目以降");
+      setPopupOpen(false);
+      // return(false);
+    } else {
+      console.log("初回");
+      sessionStorage.setItem("access", "null");
+      setPopupOpen(true);
+
+      // return (true);
+    }
+  };
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    setPopupOpen(true);
+    webStorage();
     setFadein({ opacity: 1, config: { friction: 200 } });
     setCurtain({ y: 0, opacity: 0.5, config: { friction: 100 } });
     setL_Slidein({ x: 0, opacity: 1, config: { friction: 100 }, delay: 800 });
@@ -42,20 +53,7 @@ export const Home = () => {
 
   return (
     <Layout>
-      <Modal open={popupOpen}>
-        <div className={classes.popup}>
-          <div className={classes.closeButton}>
-            <Button onClick={handleClose}>✕</Button>
-          </div>
-          <h2>
-            <span>NEW ITEM</span>
-          </h2>
-          <img src={emerald_rose} />
-          <div className={classes.openPageButton}>
-            <Button onClick={() => navigate("/Flowers")}>open↗</Button>
-          </div>
-        </div>
-      </Modal>
+      <Popup popupOpen={popupOpen} setPopupOpen={setPopupOpen} />
 
       <div className={classes.top}>
         <animated.div style={fadein}>
