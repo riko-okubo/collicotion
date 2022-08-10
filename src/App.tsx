@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.css';
-import { Home } from "./pages/Home"
+import "./App.css";
+import { Home } from "./pages/Home";
 import { Flowers } from "./pages/Flowers";
 import { Earrings } from "./pages/Earrings";
 import { AboutAccessories } from "./pages/AboutAccessories";
@@ -17,7 +17,6 @@ import { Record7 } from "./component/Records/Record7";
 import { Record8 } from "./component/Records/Record8";
 
 export const App = () => {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -26,17 +25,16 @@ export const App = () => {
         <Route path="/Earrings" element={<Earrings />} />
         <Route path="/AboutAccessories" element={<AboutAccessories />} />
         <Route path="/ProductionRecord" element={<ProductionRecord />} />
-        <Route path="/record1" element={<Record1 />} /> 
-        <Route path="/record2" element={<Record2 />} /> 
-        <Route path="/record3" element={<Record3 />} /> 
-        <Route path="/record4" element={<Record4 />} /> 
-        <Route path="/record5" element={<Record5 />} /> 
-        <Route path="/record6" element={<Record6 />} /> 
-        <Route path="/record7" element={<Record7 />} /> 
-        <Route path="/record8" element={<Record8 />} /> 
+        <Route path="/record1" element={<Record1 />} />
+        <Route path="/record2" element={<Record2 />} />
+        <Route path="/record3" element={<Record3 />} />
+        <Route path="/record4" element={<Record4 />} />
+        <Route path="/record5" element={<Record5 />} />
+        <Route path="/record6" element={<Record6 />} />
+        <Route path="/record7" element={<Record7 />} />
+        <Route path="/record8" element={<Record8 />} />
         <Route element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );
 };
-
