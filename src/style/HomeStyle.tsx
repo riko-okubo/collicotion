@@ -4,6 +4,7 @@ export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     popup: {
       backgroundColor: "#FFFFFF",
+      fontFamily: "Caveat, cursive, sans-serif",
       outline: "none",
       boxShadow: "0px 6px 4px 2px rgba(0, 0, 0, 0.25)",
       width: "fit-content",
@@ -52,6 +53,7 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     openPageButton: {
       "& Button": {
+        fontFamily: "Caveat, cursive, sans-serif",
         padding: "10px",
         color: "#C4C4C4",
         margin: "auto",
