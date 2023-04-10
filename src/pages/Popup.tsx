@@ -3,7 +3,7 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useStyles } from "../style/HomeStyle";
 import { useSpring, animated } from "react-spring";
-import emerald_rose from "../component/atoms/Image/emerald_rose.jpg";
+import shell from "../Image/shell.jpg";
 
 type Props = {
   popupOpen: boolean;
@@ -30,7 +30,7 @@ export const Popup = (props: Props) => {
         <h2>
           <span>NEW ITEM</span>
         </h2>
-        <img src={emerald_rose} />
+        <img src={shell} />
         <div className={classes.openPageButton}>
           <Button onClick={() => navigate("/Flowers")}>open↗</Button>
         </div>
