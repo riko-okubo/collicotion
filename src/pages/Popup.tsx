@@ -3,7 +3,7 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useStyles } from "../style/HomeStyle";
 import { useSpring, animated } from "react-spring";
-import shell from "../Image/shell.jpg";
+import shell from "../component/atoms/Image/shell.jpg";
 
 type Props = {
   popupOpen: boolean;
