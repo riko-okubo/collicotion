@@ -28,6 +28,8 @@ import hydrangea_purple from "../Image/hydrangea_purple.jpg";
 import hydrangea_blue from "../Image/hydrangea_blue.jpg";
 import emerald_rose from "../Image/emerald_rose.jpg";
 import emerald_rose_ from "../Image/emerald_rose_.jpg";
+import miniFlower from "../Image/miniFlower.jpg";
+import miniFlower_ from "../Image/miniFlower_.jpg";
 
 export const FlowerData = [
   {
@@ -109,5 +111,10 @@ export const FlowerData = [
     img: emerald_rose,
     title: "rose (emerald)",
     modal: emerald_rose_,
+  },
+  {
+    img: miniFlower,
+    title: "mini flowers",
+    modal: miniFlower_,
   },
 ];
