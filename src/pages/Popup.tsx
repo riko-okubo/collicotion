@@ -32,7 +32,7 @@ export const Popup = (props: Props) => {
         </h2>
         <img src={shell} />
         <div className={classes.openPageButton}>
-          <Button onClick={() => navigate("/Flowers")}>open↗</Button>
+          <Button onClick={() => navigate("/Earrings")}>open↗</Button>
         </div>
       </animated.div>
     </Modal>
